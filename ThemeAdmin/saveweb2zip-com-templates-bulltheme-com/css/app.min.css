@@ -32,7 +32,8 @@
 
 .navbar-brand-box {
     padding: 0 1.5rem;
-    width: 250px
+    width: 250px;
+    transition: .3s linear;
 }
 
 .logo {
@@ -419,7 +420,8 @@ body[data-layout=horizontal] .footer {
     position: fixed;
     top: 70px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .08);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .08)
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .08);
+    transition: .3s linear;
 }
 
 .main-content {
