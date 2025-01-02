@@ -2,17 +2,17 @@
 <html lang="en">
 
     
-<!-- Mirrored from templates.bulltheme.com/admin/fuse/layouts/index by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:18:36 GMT -->
+<!-- Mirrored from templates.bulltheme.com/admin/fuse/layouts/layouts-hori-topbar-dark by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:20:13 GMT -->
 <head>
         
         <meta charset="utf-8" />
-        <title>Dashboard | Fuse - Admin & Dashboard Template</title>
+        <title>Topbar Dark | Fuse - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="BullTheme" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
-        
+
         <!-- jvectormap -->
         <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
 
@@ -25,14 +25,11 @@
 
     </head>
 
-    <body data-sidebar="dark">
-    
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+    <body data-topbar="dark" data-layout="horizontal">
 
         <!-- Begin page -->
         <div id="layout-wrapper">
 
-            
             <header id="page-topbar">
                 <div class="navbar-header">
                     <div class="d-flex">
@@ -57,7 +54,8 @@
                             </a>
                         </div>
 
-                        <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                        <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item" data-bs-toggle="collapse"
+                            data-bs-target="#topnav-menu-content">
                             <i class="ri-menu-2-line align-middle"></i>
                         </button>
 
@@ -68,6 +66,7 @@
                                 <span class="ri-search-line"></span>
                             </div>
                         </form>
+
                     </div>
 
                     <div class="d-flex">
@@ -79,13 +78,14 @@
                             </button>
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                                 aria-labelledby="page-header-search-dropdown">
-                    
+
                                 <form class="p-3">
                                     <div class="mb-3 m-0">
                                         <div class="input-group">
                                             <input type="text" class="form-control" placeholder="Search ...">
                                             <div class="input-group-append">
-                                                <button class="btn btn-primary" type="submit"><i class="ri-search-line"></i></button>
+                                                <button class="btn btn-primary" type="submit"><i
+                                                        class="ri-search-line"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -93,38 +93,42 @@
                             </div>
                         </div>
 
-                        <div class="dropdown d-none d-sm-inline-block">
-                            <button type="button" class="btn header-item waves-effect"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <img class="" src="assets/images/flags/us.jpg" alt="Header Language" height="16">
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
-                    
+
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                                    <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span
+                                        class="align-middle">Spanish</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                                    <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span
+                                        class="align-middle">German</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                                    <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span
+                                        class="align-middle">Italian</span>
                                 </a>
 
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                                    <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span
+                                        class="align-middle">Russian</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="dropdown d-none d-lg-inline-block ms-1">
-                            <button type="button" class="btn header-item noti-icon waves-effect"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="ri-apps-2-line"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
@@ -181,8 +185,8 @@
                         </div>
 
                         <div class="dropdown d-inline-block">
-                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
-                                  data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn header-item noti-icon waves-effect"
+                                id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="ri-notification-3-line"></i>
                                 <span class="noti-dot"></span>
                             </button>
@@ -275,6 +279,7 @@
                             </div>
                         </div>
 
+
                         <div class="dropdown d-inline-block user-dropdown">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -287,10 +292,13 @@
                                 <!-- item-->
                                 <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
                                 <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My Wallet</a>
-                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
-                                <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock screen</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i
+                                        class="ri-settings-2-line align-middle me-1"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="ri-lock-unlock-line align-middle me-1"></i> Lock
+                                    screen</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                                <a class="dropdown-item text-danger" href="#"><i
+                                        class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
                             </div>
                         </div>
 
@@ -304,235 +312,232 @@
                 </div>
             </header>
 
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="vertical-menu">
+            <div class="topnav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
 
-                <div data-simplebar class="h-100">
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                            <ul class="navbar-nav">
 
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
-                        <ul class="metismenu list-unstyled" id="side-menu">
-                            <li class="menu-title">Menu</li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">
+                                        <i class="mdi mdi-home-variant-outline me-2"></i> Dashboard
+                                    </a>
+                                </li>
 
-                            <li>
-                                <a href="index.html" class="waves-effect">
-                                    <i class="mdi mdi-home-variant-outline"></i><span
-                                        class="badge rounded-pill bg-primary float-end">3</span>
-                                    <span>Dashboard</span>
-                                </a>
-                            </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-uielement" role="button">
+                                        <i class="mdi mdi-briefcase-variant-outline me-2"></i>UI Elements <div class="arrow-down"></div>
+                                    </a>
 
-                            <li>
-                                <a href="calendar.html" class=" waves-effect">
-                                    <i class="mdi mdi-calendar-outline"></i>
-                                    <span>Calendar</span>
-                                </a>
-                            </li>
+                                    <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl"
+                                        aria-labelledby="topnav-uielement">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div>
+                                                    <a href="ui-alerts.html" class="dropdown-item">Alerts</a>
+                                                    <a href="ui-badge.html" class="dropdown-item">Badge</a>
+                                                    <a href="ui-breadcrumb.html" class="dropdown-item">Breadcrumb</a>
+                                                    <a href="ui-buttons.html" class="dropdown-item">Buttons</a>
+                                                    <a href="ui-cards.html" class="dropdown-item">Cards</a>
+                                                    <a href="ui-carousel.html" class="dropdown-item">Carousel</a>
+                                                    <a href="ui-dropdowns.html" class="dropdown-item">Dropdowns</a>
+                                                    <a href="ui-grid.html" class="dropdown-item">Grid</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div>
+                                                    <a href="ui-images.html" class="dropdown-item">Images</a>
+                                                    <a href="ui-lightbox.html" class="dropdown-item">Lightbox</a>
+                                                    <a href="ui-modals.html" class="dropdown-item">Modals</a>
+                                                    <a href="ui-offcanvas.html" class="dropdown-item">Offcanvas</a>
+                                                    <a href="ui-rangeslider.html" class="dropdown-item">Range Slider</a>
+                                                    <a href="ui-session-timeout.html" class="dropdown-item">Session Timeout</a>
+                                                    <a href="ui-pagination.html" class="dropdown-item">Pagination</a>
+                                                    <a href="ui-placeholders.html" class="dropdown-item">Placeholders</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div>
+                                                    <a href="ui-progressbars.html" class="dropdown-item">Progress Bars</a>
+                                                    <a href="ui-sweet-alert.html" class="dropdown-item">Sweetalert 2</a>
+                                                    <a href="ui-tabs-accordions.html" class="dropdown-item">Tabs & Accordions</a>
+                                                    <a href="ui-typography.html" class="dropdown-item">Typography</a>
+                                                    <a href="ui-toasts.html" class="dropdown-item">Toasts</a>
+                                                    <a href="ui-video.html" class="dropdown-item">Video</a>
+                                                    <a href="ui-popover-tooltips.html" class="dropdown-item">Popovers &amp; Tooltips</a>
+                                                    <a href="ui-rating.html" class="dropdown-item">Rating</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
 
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="mdi mdi-email-outline"></i>
-                                    <span>Email</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="email-inbox.html">Inbox</a></li>
-                                    <li><a href="email-read.html">Read Email</a></li>
-                                    <li><a href="email-compose.html">Email Compose</a></li>
-                                </ul>
-                            </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button">
+                                        <i class="ri-apps-2-line me-2"></i>Apps <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-apps">
+                                        <a href="calendar.html" class="dropdown-item">Calendar</a>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-email"
+                                                role="button">
+                                                Email <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-email">
+                                                <a href="email-inbox.html" class="dropdown-item">Inbox</a>
+                                                <a href="email-read.html" class="dropdown-item">Read Email</a>
+                                                <a href="email-compose.html" class="dropdown-item">Email Compose</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
 
-                            <li class="menu-title">Layouts</li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button">
+                                        <i class="ri-stack-line me-2"></i>Components <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-components">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-form"
+                                                role="button">
+                                                Forms <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-form">
+                                                <a href="form-elements.html" class="dropdown-item">Elements</a>
+                                                <a href="form-validation" class="dropdown-item">Validation</a>
+                                                <a href="form-advanced.html" class="dropdown-item">Advanced Plugins</a>
+                                                <a href="form-editors.html" class="dropdown-item">Editors</a>
+                                                <a href="form-uploads.html" class="dropdown-item">File Upload</a>
+                                                <a href="form-xeditable.html" class="dropdown-item">Xeditable</a>
+                                                <a href="form-wizard.html" class="dropdown-item">Wizard</a>
+                                                <a href="form-mask.html" class="dropdown-item">Mask</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-table"
+                                                role="button">
+                                                Tables <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-table">
+                                                <a href="tables-basic.html" class="dropdown-item">Basic Tables</a>
+                                                <a href="tables-datatable.html" class="dropdown-item">Data Tables</a>
+                                                <a href="tables-responsive.html" class="dropdown-item">Responsive Table</a>
+                                                <a href="tables-editable.html" class="dropdown-item">Editable Table</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-charts"
+                                                role="button">
+                                                Charts <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-charts">
+                                                <a href="charts-apex.html" class="dropdown-item">Apex charts</a>
+                                                <a href="charts-chartjs.html" class="dropdown-item">Chartjs</a>
+                                                <a href="charts-flot.html" class="dropdown-item">Flot Chart</a>
+                                                <a href="charts-knob.html" class="dropdown-item">Jquery Knob Chart</a>
+                                                <a href="charts-sparkline.html" class="dropdown-item">Sparkline Chart</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
+                                                role="button">
+                                                Icons <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-icons">
+                                                <a href="icons-remix.html" class="dropdown-item">Remix Icons</a>
+                                                <a href="icons-materialdesign.html" class="dropdown-item">Material Design</a>
+                                                <a href="icons-dripicons.html" class="dropdown-item">Dripicons</a>
+                                                <a href="icons-fontawesome.html" class="dropdown-item">Font Awesome</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-map"
+                                                role="button">
+                                                Maps <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-map">
+                                                <a href="maps-google.html" class="dropdown-item">Google Maps</a>
+                                                <a href="maps-vector.html" class="dropdown-item">Vector Maps</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
 
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="mdi mdi-gradient"></i>
-                                    <span>Vertical</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="layouts-light-sidebar.html">Light Sidebar</a></li>
-                                    <li><a href="layouts-compact-sidebar.html">Compact Sidebar</a></li>
-                                    <li><a href="layouts-icon-sidebar.html">Icon Sidebar</a></li>
-                                    <li><a href="layouts-boxed.html">Boxed Layout</a></li>
-                                </ul>
-                            </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button">
+                                        <i class="ri-file-copy-2-line me-2"></i>Pages <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth"
+                                                role="button">
+                                                Authentication <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-auth">
+                                                <a href="auth-login.html" class="dropdown-item">Login</a>
+                                                <a href="auth-register.html" class="dropdown-item">Register</a>
+                                                <a href="auth-recoverpw.html" class="dropdown-item">Recover Password</a>
+                                                <a href="auth-lock-screen.html" class="dropdown-item">Lock Screen</a>
+                                            </div>
+                                        </div>
 
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="mdi mdi-page-layout-header"></i>
-                                    <span>Horizontal</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="layouts-horizontal.html">Default</a></li>
-                                    <li><a href="layouts-hori-topbar-dark.html">Topbar Dark</a></li>
-                                    <li><a href="layouts-hori-boxed-width.html">Boxed width</a></li>
-                                </ul>
-                            </li>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
+                                                role="button">
+                                                Utility <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-utility">
+                                                <a href="pages-starter.html" class="dropdown-item">Starter Page</a>
+                                                <a href="pages-maintenance.html" class="dropdown-item">Maintenance</a>
+                                                <a href="pages-comingsoon.html" class="dropdown-item">Coming Soon</a>
+                                                <a href="pages-timeline.html" class="dropdown-item">Timeline</a>
+                                                <a href="pages-faqs.html" class="dropdown-item">FAQs</a>
+                                                <a href="pages-pricing.html" class="dropdown-item">Pricing</a>
+                                                <a href="pages-404.html" class="dropdown-item">Error 404</a>
+                                                <a href="pages-500.html" class="dropdown-item">Error 500</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
 
-                            <li class="menu-title">Pages</li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button">
+                                        <i class="ri-layout-3-line me-2"></i><span>Layouts</span>
+                                        <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-layout">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti" role="button">
+                                                <span>Vertical</span>
+                                                <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-layout-verti">
+                                                <a href="layouts-light-sidebar.html" class="dropdown-item">Light Sidebar</a>
+                                                <a href="layouts-compact-sidebar.html" class="dropdown-item">Compact Sidebar</a>
+                                                <a href="layouts-icon-sidebar.html" class="dropdown-item">Icon Sidebar</a>
+                                                <a href="layouts-boxed.html" class="dropdown-item">Boxed Width</a>
+                                            </div>
+                                        </div>
 
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="mdi mdi-account-circle-outline"></i>
-                                    <span>Authentication</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="auth-login.html">Login</a></li>
-                                    <li><a href="auth-register.html">Register</a></li>
-                                    <li><a href="auth-recoverpw.html">Recover Password</a></li>
-                                    <li><a href="auth-lock-screen.html">Lock Screen</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="mdi mdi-format-page-break"></i>
-                                    <span>Utility</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="pages-starter.html">Starter Page</a></li>
-                                    <li><a href="pages-maintenance.html">Maintenance</a></li>
-                                    <li><a href="pages-comingsoon.html">Coming Soon</a></li>
-                                    <li><a href="pages-timeline.html">Timeline</a></li>
-                                    <li><a href="pages-faqs.html">FAQs</a></li>
-                                    <li><a href="pages-pricing.html">Pricing</a></li>
-                                    <li><a href="pages-404.html">Error 404</a></li>
-                                    <li><a href="pages-500.html">Error 500</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="menu-title">Components</li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="mdi mdi-briefcase-variant-outline"></i>
-                                    <span>UI Elements</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="ui-alerts.html">Alerts</a></li>
-                                    <li><a href="ui-badge.html">Badge</a></li>
-                                    <li><a href="ui-breadcrumb.html">Breadcrumb</a></li>
-                                    <li><a href="ui-buttons.html">Buttons</a></li>
-                                    <li><a href="ui-cards.html">Cards</a></li>
-                                    <li><a href="ui-carousel.html">Carousel</a></li>
-                                    <li><a href="ui-dropdowns.html">Dropdowns</a></li>
-                                    <li><a href="ui-grid.html">Grid</a></li>
-                                    <li><a href="ui-images.html">Images</a></li>
-                                    <li><a href="ui-lightbox.html">Lightbox</a></li>
-                                    <li><a href="ui-modals.html">Modals</a></li>
-                                    <li><a href="ui-offcanvas.html">Offcanvas</a></li>
-                                    <li><a href="ui-rangeslider.html">Range Slider</a></li>
-                                    <li><a href="ui-session-timeout.html">Session Timeout</a></li>
-                                    <li><a href="ui-pagination.html">Pagination</a></li>
-                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                                    <li><a href="ui-placeholders.html">Placeholders</a></li>
-                                    <li><a href="ui-sweet-alert.html">Sweetalert 2</a></li>
-                                    <li><a href="ui-tabs-accordions.html">Tabs & Accordions</a></li>
-                                    <li><a href="ui-typography.html">Typography</a></li>
-                                    <li><a href="ui-toasts.html">Toasts</a></li>
-                                    <li><a href="ui-video.html">Video</a></li>
-                                    <li><a href="ui-popover-tooltips.html">Popovers &amp; Tooltips</a></li>
-                                    <li><a href="ui-rating.html">Rating</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="waves-effect">
-                                    <i class="ri-eraser-fill"></i>
-                                    <span class="badge rounded-pill bg-danger float-end">8</span>
-                                    <span>Forms</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="form-elements.html">Form Elements</a></li>
-                                    <li><a href="form-validation">Form Validation</a></li>
-                                    <li><a href="form-advanced.html">Form Advanced Plugins</a></li>
-                                    <li><a href="form-editors.html">Form Editors</a></li>
-                                    <li><a href="form-uploads.html">Form File Upload</a></li>
-                                    <li><a href="form-xeditable.html">Form X-editable</a></li>
-                                    <li><a href="form-wizard.html">Form Wizard</a></li>
-                                    <li><a href="form-mask.html">Form Mask</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="ri-table-2"></i>
-                                    <span>Tables</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="tables-basic.html">Basic Tables</a></li>
-                                    <li><a href="tables-datatable.html">Data Tables</a></li>
-                                    <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                    <li><a href="tables-editable.html">Editable Table</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="ri-bar-chart-line"></i>
-                                    <span>Charts</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="charts-apex.html">Apex Charts</a></li>
-                                    <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
-                                    <li><a href="charts-flot.html">Flot Charts</a></li>
-                                    <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
-                                    <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="ri-brush-line"></i>
-                                    <span>Icons</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="icons-remix.html">Remix Icons</a></li>
-                                    <li><a href="icons-materialdesign.html">Material Design</a></li>
-                                    <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                    <li><a href="icons-fontawesome.html">Font Awesome </a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="ri-map-pin-line"></i>
-                                    <span>Maps</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="maps-google.html">Google Maps</a></li>
-                                    <li><a href="maps-vector.html">Vector Maps</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ri-share-line"></i><span>Multi Level</span></a>
-                                <ul class="sub-menu" aria-expanded="true">
-                                    <li><a href="javascript: void(0);">Level 1.1</a></li>
-                                    <li>
-                                        <a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
-                                        <ul class="sub-menu" aria-expanded="true">
-                                            <li><a href="javascript: void(0);">Level 2.1</a></li>
-                                            <li><a href="javascript: void(0);">Level 2.2</a></li>
-                                            <li>
-                                                <a href="javascript: void(0);" class="has-arrow">Level 2.3</a>
-                                                <ul class="sub-menu" aria-expanded="true">
-                                                    <li><a href="javascript: void(0);">Level 2.3.1</a></li>
-                                                    <li><a href="javascript: void(0);">Level 2.3.2</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Sidebar -->
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-hori" role="button">
+                                                <span>Horizontal</span>
+                                                <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-layout-hori">
+                                                <a href="layouts-horizontal.html" class="dropdown-item">Default</a>
+                                                <a href="layouts-hori-topbar-dark.html" class="dropdown-item">Topbar Dark</a>
+                                                <a href="layouts-hori-boxed-width.html" class="dropdown-item">Boxed Width</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <!-- Left Sidebar End -->
-
-            
 
             <!-- ============================================================== -->
             <!-- Start right Content here -->
@@ -541,17 +546,17 @@
 
                 <div class="page-content">
                     <div class="container-fluid">
-
+                        
                         <!-- start page title -->
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Dashboard</h4>
+                                    <h4 class="mb-sm-0">Topbar Dark</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Fuse</a></li>
-                                            <li class="breadcrumb-item active">Dashboard</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Horizontal</a></li>
+                                            <li class="breadcrumb-item active">Topbar Dark</li>
                                         </ol>
                                     </div>
 
@@ -559,7 +564,7 @@
                             </div>
                         </div>
                         <!-- end page title -->
-                        
+
                         <div class="row">
                             <div class="col-xl-3 col-sm-6">
                                 <div class="card">
@@ -1180,12 +1185,12 @@
                             <!-- end col -->
                         </div>
                         <!-- end row -->
-                        
+
                     </div>
-                    <!-- container-fluid -->
+                    
                 </div>
                 <!-- End Page-content -->
-
+               
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
@@ -1200,7 +1205,7 @@
                         </div>
                     </div>
                 </footer>
-
+                
             </div>
             <!-- end main content-->
 
@@ -1279,5 +1284,5 @@
 
     </body>
 
-<!-- Mirrored from templates.bulltheme.com/admin/fuse/layouts/index by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:19:32 GMT -->
+<!-- Mirrored from templates.bulltheme.com/admin/fuse/layouts/layouts-hori-topbar-dark by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Sep 2024 15:20:14 GMT -->
 </html>
